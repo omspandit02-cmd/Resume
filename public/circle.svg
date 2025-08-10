@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100"
+     xmlns="http://www.w3.org/2000/svg"
+     style="display: block; margin: 0; padding: 0;">
+  <!-- Smallest semi-circle -->
+  <path d="M30 20 A10 30 0 0 0 30 80" fill="#7D89F6" />
+
+  <!-- Medium semi-circle -->
+  <path d="M40 10 A20 40 0 0 0 40 90" fill="#6A76F0" />
+
+  <!-- Largest semi-circle -->
+  <path d="M50 0 A30 50 0 0 0 50 100" fill="#525FE1" />
+</svg>

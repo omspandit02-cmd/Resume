@@ -103,7 +103,7 @@ ${formData.firstName} ${formData.lastName}
     `.trim();
 
     const mailtoLink = `mailto:Omspandit02@gmail.com?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
   };
@@ -180,11 +180,11 @@ ${formData.firstName} ${formData.lastName}
               <div>
                 <p className="text-sm text-gray-500">You can Email Me Here</p>
                 <p className="mt-1 text-lg text-gray-900 dark:text-gray-100">
-                  Omspandit02<span className="text-[#8E54E9]">@</span>gmail.com
+                  omspandit02<span className="text-[#8E54E9]">@</span>gmail.com
                 </p>
               </div>
               <a
-                href="mailto:Omspandit02@gmail.com"
+                href="mailto:omspandit02@gmail.com"
                 className="p-3 bg-white dark:bg-gray-700 rounded-md border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
               >
                 <BsArrowRight className="text-gray-600 dark:text-gray-300" />
@@ -311,7 +311,7 @@ ${formData.firstName} ${formData.lastName}
                     onChange={(e) =>
                       handleServiceChange(
                         "Dashboard / SaaS Interface",
-                        e.target.checked
+                        e.target.checked,
                       )
                     }
                   />

@@ -83,19 +83,19 @@ const page = () => {
                 <span className="text-right">Sep 2025 - Dec 2025</span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-gray-200 dark:border-gray-700 pt-4 text-gray-900 dark:text-gray-100">
+                <span className="text-left">Zidio</span>
+                <span className="text-center">UI/UX Designer</span>
+                <span className="text-right">May 2025 – June 2025</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-gray-200 dark:border-gray-700 pt-4 text-gray-900 dark:text-gray-100">
                 <span className="text-left">Wyreflow</span>
                 <span className="text-center">UI/UX Designer</span>
-                <span className="text-right">May 2025–June 2025</span>
+                <span className="text-right">Oct 2024 – Nov 2024</span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-gray-200 dark:border-gray-700 pt-4 text-gray-900 dark:text-gray-100">
                 <span className="text-left">Pamprazzi</span>
                 <span className="text-center">UI/UX Designer</span>
-                <span className="text-right">May 2025–June 2025</span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-gray-200 dark:border-gray-700 pt-4 text-gray-900 dark:text-gray-100">
-                <span className="text-left">Zidio</span>
-                <span className="text-center">UI/UX Designer</span>
-                <span className="text-right">May 2025–June 2025</span>
+                <span className="text-right">July 2024 – Aug 2024</span>
               </div>
             </div>
           </div>

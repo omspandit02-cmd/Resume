@@ -5,6 +5,7 @@ import { BsFileEarmarkArrowDown, BsLinkedin } from "react-icons/bs";
 import { Exp, Works } from "../../../constant/details";
 import MyWorks from "./my-works";
 import NewSection from "./new-section";
+import MyCertification from "./my-certification";
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
                 width={350}
                 height={400}
                 className="object-cover rounded-xl"
+                draggable={false}
               />
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-2">
@@ -90,6 +92,11 @@ const page = () => {
                 <span className="text-center">UI/UX Designer</span>
                 <span className="text-right">May 2025–June 2025</span>
               </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-gray-200 dark:border-gray-700 pt-4 text-gray-900 dark:text-gray-100">
+                <span className="text-left">Furationtech</span>
+                <span className="text-center">UI/UX Designer</span>
+                <span className="text-right">Sep 2025 - Dec 2025</span>
+              </div>
             </div>
           </div>
         </div>
@@ -98,6 +105,7 @@ const page = () => {
       <Marquee details={Works} />
       <NewSection />
       <MyWorks />
+      <MyCertification />
       <Marquee details={Exp} />
     </section>
   );

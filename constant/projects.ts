@@ -49,4 +49,48 @@ export const projects = [
     mainImage: "/landing/1.png",
     thumbnails: ["/landing/2.png"],
   },
+  {
+    id: 6,
+    title: "AR Museum",
+    mainImage: "/new-figma.png",
+    thumbnails: ["/new-figma.png"],
+    externalLink:
+      "https://www.figma.com/proto/JTB09ZUEnvNUVAf5Wxfz0j/AR-museum-Design-Project?node-id=0-1",
+  },
+  {
+    id: 7,
+    title: "Dashboard",
+    mainImage: "/dashboard.png",
+    thumbnails: ["/dashboard.png"],
+    externalLink: "https://www.behance.net/gallery/229559435/Dashboard",
+  },
+  {
+    id: 8,
+    title: "Bondly Dating",
+    mainImage: "/bondly-dating.png",
+    thumbnails: ["/bondly-dating.png"],
+    externalLink:
+      "https://www.figma.com/design/SvQgQVvDZVA9o748EQrhPD/Bondly-Dating-appliction?node-id=0-1&p=f",
+  },
+  {
+    id: 9,
+    title: "Parallax Website",
+    mainImage: "/parallax-website.png",
+    thumbnails: ["/parallax-website.png"],
+    externalLink: "https://www.behance.net/gallery/219823241/Parallax-website",
+  },
+  {
+    id: 10,
+    title: "Home Heaven",
+    mainImage: "/home-heaven.png",
+    thumbnails: ["/home-heaven.png"],
+    externalLink: "https://www.behance.net/gallery/214682969/Home-Heaven",
+  },
+  {
+    id: 11,
+    title: "Futuristic Gaming",
+    mainImage: "/future-gaming.png",
+    thumbnails: ["/future-gaming.png"],
+    externalLink: "https://www.behance.net/gallery/199835053/Banner",
+  },
 ];

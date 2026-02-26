@@ -53,6 +53,7 @@ const Footer = () => {
                     width={60}
                     height={60}
                     className="-mr-[44px]"
+                    draggable={false}
                   />
                   <Image
                     src="/circle-1.svg"
@@ -60,6 +61,7 @@ const Footer = () => {
                     width={70}
                     height={70}
                     className="-mr-[51px]"
+                    draggable={false}
                   />
                   <Image
                     src="/circle.svg"
@@ -67,16 +69,18 @@ const Footer = () => {
                     width={80}
                     height={80}
                     className="-mr-10"
+                    draggable={false}
                   />
                   <Image
                     src="/profile-circle.png"
                     alt="Profile"
                     width={80}
                     height={80}
+                    draggable={false}
                   />
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-4">
-                  <p className="font-semibold text-lg">omspandit02gmail.com</p>
+                  <p className="font-semibold text-lg">Om Pandit</p>
                   <p className="text-xs text-gray-400">Designer</p>
                   <a
                     href="https://www.linkedin.com/in/omspandit02/"
@@ -99,7 +103,7 @@ const Footer = () => {
 
                 <div className="space-y-4">
                   <p className="text-2xl lg:text-3xl text-white">
-                    Omspandit.<span className="text-purple-500">@</span>
+                    omspandit02<span className="text-purple-500">@</span>
                     gmail.com
                   </p>
 
@@ -115,7 +119,7 @@ const Footer = () => {
                 </p>
 
                 <a
-                  href="mailto:Omspandit@gmail.com"
+                  href="mailto:omspandit02@gmail.com"
                   className="bg-[#8E54E9] text-white flex items-center py-2 pl-4 pr-2 rounded-4xl w-fit"
                 >
                   Send me hi{" "}
@@ -131,11 +135,17 @@ const Footer = () => {
 
           <div className="bg-[#111111] w-full py-2 pl-4 sm:pl-8 md:pl-16 lg:pl-30 flex flex-col sm:flex-row items-center sm:justify-between">
             <div className="mr-0 sm:mr-20 mb-4 sm:mb-0">
-              <Image src="/logo.jpg" alt="Logo" width={75} height={75} />
+              <Image
+                src="/logo.jpg"
+                alt="Logo"
+                width={75}
+                height={75}
+                draggable={false}
+              />
             </div>
             <div>
               <div className="text-[#8E54E9] flex text-sm items-center justify-center sm:justify-start">
-                Copyright&copy;Ompandit{" "}
+                Copyright &copy; Ompandit{" "}
                 <span className="text-white ml-4">
                   {new Date().getFullYear()}
                 </span>

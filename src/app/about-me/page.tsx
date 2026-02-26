@@ -36,10 +36,10 @@ const page = () => {
                 <BsLinkedin className="text-gray-800 dark:text-white" />
               </a>
               <a
-                href="mailto:Omspandit02@gmail.com"
+                href="mailto:omspandit02@gmail.com"
                 className="text-2xl font-semibold text-gray-900 dark:text-white hover:text-purple-500"
               >
-                Omspandit02<span className="text-[#8E54E9]">@</span>gmail.com
+                omspandit02<span className="text-[#8E54E9]">@</span>gmail.com
               </a>
             </div>
             <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-tight">

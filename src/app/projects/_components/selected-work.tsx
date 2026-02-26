@@ -22,6 +22,15 @@ import {
 import Image from "next/image";
 import { projects } from "../../../../constant/projects";
 
+// Type definition for project with optional externalLink
+type Project = {
+  id: number;
+  title: string;
+  mainImage: string;
+  thumbnails: string[];
+  externalLink?: string;
+};
+
 const stats = [
   {
     id: 1,
@@ -158,9 +167,9 @@ const SelectedWorks = () => {
                   draggable={false}
                   className="w-full h-48 md:h-60 object-cover"
                 />
-                {(proj as any).externalLink ? (
+                {(proj as Project).externalLink ? (
                   <a
-                    href={(proj as any).externalLink}
+                    href={(proj as Project).externalLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute bottom-2 right-2 bg-white dark:bg-gray-700 p-1.5 md:p-2 rounded-md shadow hover:bg-gray-100 dark:hover:bg-gray-600"
@@ -198,7 +207,7 @@ const SelectedWorks = () => {
                 )}
               </div>
               <div className="mt-4 flex justify-center space-x-1 md:space-x-2 overflow-x-auto pb-2">
-                {!(proj as any).externalLink && (
+                {!(proj as Project).externalLink && (
                   <>
                     {/* Main image as thumbnail - only show if not currently selected */}
                     {selectedImages[proj.id] !== proj.mainImage && (

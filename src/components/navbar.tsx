@@ -13,7 +13,7 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <Link href="/">
-            <Image src="/logo.jpg" alt="Logo" width={75} height={75} />
+            <Image src="/logo.jpg" alt="Logo" width={105} height={105} />
           </Link>
         </div>
         {/* Desktop Nav */}

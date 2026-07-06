@@ -1,25 +1,26 @@
 import React from "react";
-
+import Image from "next/image";
 const skills = [
   {
     title: "Figma",
     details: "Leading collaborative design tool",
     percentage: "90",
-    color: "bg-red-500",
+    color: "bg-white", // White background for the logo circle
+    logo: "/figma.webp",
   },
   {
     title: "Canva",
-    details:
-      "Skilled in Canva for designing professional graphics and layouts.",
+    details: "Skilled in Canva for designing professional graphics and layouts.",
     percentage: "60",
-    color: "bg-cyan-500",
+    color: "bg-white", // White background for the logo circle
+    logo: "/canva.webp",
   },
   {
     title: "Miro",
-    details:
-      "Skilled in Miro for journey mapping, wireframing, and team collaboration.",
+    details: "Skilled in Miro for journey mapping, wireframing, and team collaboration.",
     percentage: "40",
-    color: "bg-yellow-500",
+    color: "bg-white", // White background for the logo circle
+    logo: "/miro.webp",
   },
 ];
 
@@ -51,78 +52,22 @@ const CreativeToolbox = () => {
         {/* Skills Section */}
         <div className="w-full mt-12 lg:mt-0 lg:ml-auto lg:w-1/2 lg:max-w-2xl">
           <div className="space-y-12">
-            {skills.map(({ title, details, percentage, color }, index) => (
+            {skills.map(({ title, details, percentage, color, logo }, index) => (
               <div
                 key={index}
                 className="space-y-4 bg-white p-5 rounded-md shadow-sm"
               >
                 {/* Skill Header */}
                 <div className="flex items-center space-x-4">
-                  <div
-                    className={`${color} w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold`}
-                  >
-                    {title === "Figma" && (
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M8 24a4 4 0 004-4v-4H8a4 4 0 000 8z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M4 16a4 4 0 014-4h4v8H8a4 4 0 01-4-4z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M4 8a4 4 0 014-4h4v8H8a4 4 0 01-4-4z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M12 4h4a4 4 0 010 8h-4V4z"
-                          fill="currentColor"
-                        />
-                        <circle cx="16" cy="16" r="4" fill="currentColor" />
-                      </svg>
-                    )}
-                    {title === "Canva" && (
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M7.5 12L10 14.5L16.5 8"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="9"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                        />
-                      </svg>
-                    )}
-                    {title === "Miro" && (
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    )}
+                  
+                  <div className={`${color} w-16 h-16 rounded-full flex items-center justify-center p-1 overflow-hidden border border-gray-100 shadow-inner`}>
+                    <Image
+                      src={logo} 
+                      alt={`${title} logo`}
+                      width={80}
+                      height={80}
+                      className="w-10 h-10 object-contain"
+                    />
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold text-gray-900">
@@ -132,6 +77,7 @@ const CreativeToolbox = () => {
                   </div>
                 </div>
 
+                {/* Progress Bar (is same) */}
                 <div className="space-y-2">
                   <div className="bg-gray-300 h-2 rounded-full overflow-hidden">
                     <div

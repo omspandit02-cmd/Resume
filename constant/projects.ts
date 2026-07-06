@@ -93,4 +93,29 @@ export const projects = [
     thumbnails: ["/future-gaming.png"],
     externalLink: "https://www.behance.net/gallery/199835053/Banner",
   },
+
+  {
+    id: 12,
+    title: "Call of Duty",
+    mainImage: "/landing/callofduty.webp",
+    thumbnails: ["/landing/callofduty.webp", "/landing/callofduty2.webp", "/landing/callofduty3.webp"],
+  },
+  {
+    id: 13,
+    title: "Dimond Core Saas Website",
+    mainImage: "/landing/diamond.webp",
+    thumbnails: ["/landing/diamond.webp", "/landing/diamond2.webp"],
+  },
+  {
+    id: 14,
+    title: "MacBook Pro 16",
+    mainImage: "/landing/mac2.webp",
+    thumbnails: ["/landing/mac.webp", "/landing/mac2.webp", "/landing/mac3.webp"],
+  },
+  {
+    id: 15,
+    title: "ParallaX",
+    mainImage: "/landing/ParallaX2.png",
+    thumbnails: ["/landing/ParallaX.png"],
+  },
 ];
